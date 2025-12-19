@@ -161,10 +161,11 @@
 
 <section id="booking">
   <h2>Book a Service</h2>
-  <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+  <form action="https://formspree.io/f/xeqybzlp" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="address" placeholder="Service Address (Street, City, ZIP)" required>
     <select name="service" required>
       <option value="">Select a Service</option>
       <option value="Interior Cleaning">Interior Deep Cleaning</option>
@@ -173,7 +174,8 @@
       <option value="Engine Cleaning">Engine Bay Cleaning</option>
     </select>
     <textarea name="message" rows="5" placeholder="Additional details (vehicle type, preferred date, etc.)"></textarea>
-    <button type="submit">Submit Request</button>
+    <input type="hidden" name="_to" value="eghabuzyan@gmail.com">
+    <button type="submit">Book Now</button>
   </form>
 </section>
 
